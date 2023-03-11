@@ -36,6 +36,10 @@ class Following : public State, public AgentInterface {
         void set_path(double x, double y) { 
             paths.push_back({x, y});
         }
+
+        void clear_path() { 
+            paths.clear();
+        }
         std::deque<std::pair<double, double>> paths;
         double goal_x;
         double goal_y;
@@ -56,7 +60,9 @@ move robot to the default start point.
 */
 class Restart : public State, public AgentInterface {
     public:
-    void entry(const Event& e) {track_velocity(0,0,0,0);}
+    void entry(const Event& e) {
+        track_velocity(0,0,0,0);
+    }
     void during() { 
         teleport(-600, -280, 1.57);
         emit(Event("inactive"));
@@ -90,6 +96,7 @@ class BlockController : public StateMachine, public AgentInterface {
             }
             if(e.value()["value"] == "restart" ){
                 // emit the startover to activate restart state
+                following.clear_path();
                 emit(Event("startover"));
                 // emit another event catched by leading robot
                 emit(Event("trigger_restart_button"));
