@@ -54,8 +54,8 @@
 ### Run the Project
 To move the leading robot (yellow), you can click the screen to guide the robot move toward that location. The start point will always be at the left upper cornor of the maze. After you guide the leading robot, click the "Start Following" button at the upper right cornor of the screen. Once clicking, the follower robot (red square) will follow the same path as the leading robot guided by user. If the follower robot can not pass through the obstacles, you can click the "Restart" button. Then the leading and following robots will automatically be moved to their start point. 
 
-[videos]
-
+### Demo
+![](/misc/demo.gif)
 
 
 ### Acknowedges
