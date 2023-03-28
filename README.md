@@ -61,7 +61,7 @@ To move the leading robot (yellow), you can click the screen to guide the robot 
 ### Acknowedges
 - Professor Makhsous's Github repo: https://github.com/sosper30/eep520
 - Professor Klavins Github repo:  https://github.com/klavinslab/enviro
-- Thank Professor Makhsous teaching this course and all the well-documented course material.
+- Thank Professor Makhsous teaching this course and providing all the well-documented course material.
 - Thank our TA, Sanskar Naik, for answering all the questions regarding the final project.
 
 
